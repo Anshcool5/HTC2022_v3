@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EBER</title>
+        <link rel="stylesheet" href="static/styles/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+    <section id="header">
+      <p id="title">Eat Better, Eat Right</p>
+  </section>
+  <section id="main">
+      <div id="description">
+          <p>
+              Are you ready to eat better and right at the Lister dinning hall, University of Alberta.
+              Try out our program below that recommends you the perfect meal based on menu options and metabolic needs.
+          </p>
+      </div>
+      <form class="form-inline" method="POST" action="{{ url_for('test') }}">
+        <div id="form" class="form-group">
+          <div id="inp" class="input-group">
+              <span class="input-group-addon">Please select the meal type</span>
+                  <select id="sel" name="comp_select" class="selectpicker form-control">
+                    {% for o in data %}
+                    <option id="val" value="{{ o.name }}">{{ o.name }}</option>
+                    {% endfor %}
+                  </select>
+                <p><label>Sex:</label>
+                <select id="selg" name="gen_select" class="selectpicker form-control">
+                    {% for i in gen %}
+                    <option id="valg" value="{{ i }}">{{ i }}</option>
+                    {% endfor %}
+                  </select>
+                  <label>Age:</label>
+                  <input id="enta" class="text" name="age">
+                </p>
+                <p><label>Weight:</label>
+                    <input id="entw" class="text" name="weight">
+                <select id="selw" name="wei_select" class="selectpicker form-control">
+                    {% for j in w %}
+                    <option id="valw" value="{{ j }}">{{ j }}</option>
+                    {% endfor %}
+                  </select>
+                  <label>Height:</label>
+                  <input id="enth" class="text" name="height">
+                <select id="selh" name="hei_select" class="selectpicker form-control">
+                    {% for k in h %}
+                    <option id="valh" value="{{ k }}">{{ k }}</option>
+                    {% endfor %}
+                  </select>
+                </p>
+                <p>
+                    <label>Activity Level:</label>
+                    <select id="sela" name="a_select" class="selectpicker form-control">
+                        {% for l in a %}
+                        <option id="vala" value="{{ l }}">{{ l }}</option>
+                        {% endfor %}
+                      </select>
+                      <label>Fitness Goal:</label>
+                    <select id="selgs" name="g_select" class="selectpicker form-control">
+                        {% for m in g %}
+                        <option id="valgs" value="{{ m }}">{{ m }}</option>
+                        {% endfor %}
+                      </select>
+                </p>
+          </div>
+          <button id="res-btn" type="submit" class="btn btn-default">Go</button>
+        </div>
+      <hr class="divider" />
+      <div class="header">
+          <h2>Some info about our project</h2>
+      </div>
+      <div class="card">
+          <h2>About </h2>
+          <p>
+              We're scraping the daily menu options for the variuos meals available at our dinning hall. 
+              A student will then be prompted to enter some quantitative variables such as their height, weight, age, etc.
+              This will help our program to determine the perfect meal for them and ensure no wastage and under-eating users. 
+          </p>
+      </div>
+      <div class="card">
+          <h2>Aim</h2>
+          <p>
+              Our program aims to promote sutainable use of food prepared at buffet systems along with promoting healthy eating habits among users.
+          </p>
+      </div>
+      <img
+          id="info"
+          src="static/media/stat.jpg"
+      />
+      <div class="card">
+          <h2>Future Plans</h2>
+          <p>
+              In the future, we hope to - <br>
+              1). Add functionality for more buffet systems throughout the country.<br>
+              2). Accomodate users with dietary restrictions in the future.<br>
+              3). Reduce food wastage at buffet restaurants by providing meal plans of potential customers before food preparation begins.
+          </p>
+      </div>
+      <hr class="divider" />
+      <div id="view-section">
+          
+          <p>
+              Click the button below to view the U of A dinning services site.
+              This is the site we're scraping menu items from.
+              I've included the location of the dinning hall next to the button as well.
+          </p>
+          <div id="view">
+              <a href="https://ualberta.campusdish.com/">
+                  <button id="view-btn">U of A Dinning Services</button></a
+              >
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lister%20Conference%20Centre,%20U%20of%20A%20Conference%20Services,%20Edmonton,%20AB%20T6G%202X2+(Lister%20Residence)&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+  </section>
+  <section id="footer">
+      <div class="footer">
+          <p>Banzai 404&#153;</p>
+          <p>Made with blood, sweat and tears</p>
+      </div>
+  </section>
+</body>
+</html>

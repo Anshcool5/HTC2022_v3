@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EBER</title>
+        <link rel="stylesheet" href="static/styles/menu.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+    <section id="header">
+      <p id="title">These are the menu items for your chosen meal - </p>
+  </section>
+  <section id="main">
+      <div id="items">
+            {% for item in food_items_updated%}
+                <li>{{item}}</li>
+            {% endfor %}
+            <button id="cont-btn" type="submit" class="btn btn-default">Continue</button>
+      </div>
+    </section>
+    <div class="card">
+        <h2>Your Recommended Dietary Intake: </h2>
+        <p>
+            Calorie Intake: {{Cal}}
+            Protein Intake: {{Prot}}
+            Carbohydrate Intake: {{Carb}}
+            Fat Intake: {{Fat}}
+        </p>
+    </div>
+</body>
+</html>

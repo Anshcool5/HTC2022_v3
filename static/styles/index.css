@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #f1d60c;
+}
+body {
+    background: #1A5C09;
+}
+#header {
+    background-image: url("https://www.brunet.ca/globalassets/sante/conseils-sante/mangez-bien-guide-alimentaire/mangez-bien-guide-alimentaire-big.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+#title {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    font-size: 5rem;
+    padding-left: 180px;
+}
+#description {
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#form{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+#inp{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#sel{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#val{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#selg{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#valg{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#enta{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#selw{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#valw{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#entw{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#selh{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#valh{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#enth{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#sela{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#vala{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#selgs{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#valgs{
+    font-size: 2rem;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+#res-btn{
+    width: 33vw;
+    background: #1e3785;
+    padding: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 2rem;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+} 
+.divider {
+    margin: 50px 20px;
+    border: 2px solid #dc143c;
+    border-radius: 10px;
+}
+.header {
+    font-size: 2.7rem;
+    margin: 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    background: #1e3785;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 30px;
+}
+.card h2 {
+    align-self: center;
+    font-size: 3rem;
+}
+.card p {
+    font-size: 2em;
+    width: 50vw;
+}
+#info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: auto;
+    border-radius: 20px;
+}
+#view-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+}
+#view-section p {
+
+    margin: 0px 20px;
+    font-size: 2.2rem;
+    padding: 30px 0px;
+}
+#view-btn {
+    width: 33vw;
+    background: #1e3785;
+    padding: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 2rem;
+    align-items: center;
+    margin-right: 20px;
+} 
+iframe {
+    margin-left: 20px;
+}
+#view {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin-top: 15px;
+    background: #b39a0f;
+}
+.footer p {
+    color: #202020;
+    padding: 0px 10px;
+}
